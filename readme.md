@@ -16,3 +16,9 @@ sass --watch src/sass:src/public
 - [x] Download neccessary fonts
 - [x] Create root font sizes
 - [x] Create root colors
+
+### HTML
+
+- [ ] Create html using semantic elements
+- [ ] Call classes with BEM technology
+- [ ] Add proper alt names
