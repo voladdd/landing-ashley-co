@@ -1,8 +1,8 @@
-### Other
+### Utilities
 
 #### Launch SASS to watch folder:
 
-sass --watch src/sass:src/public
+sass --watch src/scss:src/public
 
 #### Design: [FIGMA](https://www.figma.com/file/b4FE5jKE4SVKBSNvjpNd6j/spizjuAlcohol?node-id=0%3A1)
 
@@ -20,5 +20,17 @@ sass --watch src/sass:src/public
 ### HTML
 
 - [ ] Create html using semantic elements
-- [ ] Call classes with BEM technology
-- [ ] Add proper alt names
+- [ ] Name classes with BEM technology
+- [ ] Proper alt names
+
+### CSS
+
+- [ ] Responsive design for mobile, tablet, pc
+- [ ] Custom scrollbar
+
+### JS
+
+- [ ] Smooth scrool between sections
+- [ ] Fade animations on scroll
+- [ ] Custom image container behavior on scroll
+- [ ] Closable popup message

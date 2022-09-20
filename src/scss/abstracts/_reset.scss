@@ -7,11 +7,9 @@
   margin: 0;
 }
 
-// /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-// ul[role="list"],
-// ol[role="list"] {
-//   list-style: none;
-// }
+ul[role="list"] {
+  list-style: none;
+}
 
 // /* Set core body defaults */
 // body {
@@ -25,10 +23,16 @@
 //   display: block;
 // }
 
-// /* Inherit fonts for inputs and buttons */
-// input,
-// button,
-// textarea,
-// select {
-//   font: inherit;
-// }
+/* Inherit fonts for inputs and buttons + reset styles */
+a,
+a:visited,
+input,
+button,
+textarea,
+select {
+  border: none;
+  font: inherit;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0;
+}

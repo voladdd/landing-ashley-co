@@ -7,4 +7,63 @@
   margin: 0;
 }
 
+ul[role=list] {
+  list-style: none;
+}
+
+/* Inherit fonts for inputs and buttons + reset styles */
+a,
+a:visited,
+input,
+button,
+textarea,
+select {
+  border: none;
+  font: inherit;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.burger-menu {
+  text-align: left;
+  background: transparent;
+  position: relative;
+  width: 30px;
+  top: 0px;
+  right: 0px;
+  transition-duration: 0.5s;
+}
+.burger-menu .icon {
+  transition-duration: 0.5s;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  top: 0;
+  background-color: #262626;
+}
+.burger-menu .icon:after {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background-color: #262626;
+  content: "";
+  top: 10px;
+}
+.burger-menu.open .icon {
+  transition-duration: 0.5s;
+  background: transparent;
+}
+.burger-menu.open .icon:after {
+  transform: rotateZ(-45deg) scaleX(1.25) translate(8px, -10px);
+}
+.burger-menu:hover {
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=style.css.map */

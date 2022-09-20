@@ -1,0 +1,52 @@
+@use "../abstracts/colors" as *;
+
+@mixin btn($right, $top) {
+  position: relative;
+  width: 30px;
+  top: $top;
+  right: $right;
+  transition-duration: 0.5s;
+}
+
+@mixin icon($height, $width) {
+  transition-duration: 0.5s;
+  position: absolute;
+  height: $height;
+  width: $width;
+  top: 0;
+  background-color: $text-color-black;
+}
+
+@mixin icon-before($height, $width, $top) {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: $width;
+  height: $height;
+  background-color: $text-color-black;
+  content: "";
+  top: $top;
+}
+
+.burger-menu {
+  text-align: left;
+  background: transparent;
+  @include btn(0px, 0px);
+  .icon {
+    @include icon(4px, 30px);
+    &:after {
+      @include icon-before(4px, 30px, 10px);
+    }
+  }
+  &.open {
+    .icon {
+      transition-duration: 0.5s;
+      background: transparent;
+      &:after {
+        transform: rotateZ(-45deg) scaleX(1.25) translate(8px, -10px);
+      }
+    }
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
