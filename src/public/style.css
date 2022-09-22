@@ -11,6 +11,12 @@ ul[role=list] {
   list-style: none;
 }
 
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
 /* Inherit fonts for inputs and buttons + reset styles */
 a,
 a:visited,
@@ -19,7 +25,6 @@ button,
 textarea,
 select {
   border: none;
-  font: inherit;
   text-decoration: none;
   display: inline-block;
   padding: 0;
@@ -27,6 +32,36 @@ select {
 
 body {
   font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 400;
+}
+
+button,
+a {
+  text-transform: uppercase;
+}
+
+section a {
+  font-size: 0.75rem;
+  color: inherit;
+}
+section h1 {
+  font-size: 1.5625rem;
+}
+section h2 {
+  font-size: 0.84375rem;
+}
+section h3 {
+  font-size: 0.796875rem;
+}
+section p {
+  font-size: 0.9375rem;
 }
 
 .burger-menu {
@@ -64,6 +99,44 @@ body {
 }
 .burger-menu:hover {
   cursor: pointer;
+}
+
+section.intro {
+  background-color: #e7f066;
+  color: #262626;
+}
+
+section.candles {
+  background-color: #9c8554;
+  color: #b2b2b2;
+}
+
+section.perfume {
+  color: #b2b2b2;
+  background-color: #a26779;
+}
+
+section.about {
+  background-color: #ebebeb;
+  color: #262626;
+}
+
+section.refill {
+  color: #262626;
+}
+
+section.perfume {
+  color: #262626;
+}
+
+section.wash {
+  background-color: #504b4d;
+  color: #b2b2b2;
+}
+
+section.industry {
+  background-color: #b04836;
+  color: #b2b2b2;
 }
 
 /*# sourceMappingURL=style.css.map */

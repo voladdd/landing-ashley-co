@@ -1,0 +1,6 @@
+@use "../abstracts/colors" as *;
+
+section.wash {
+  background-color: $background-color-gray;
+  color: $text-color-gray;
+}

@@ -17,11 +17,11 @@ ul[role="list"] {
 // }
 
 // /* Make images easier to work with */
-// img,
-// picture {
-//   max-width: 100%;
-//   display: block;
-// }
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
 
 /* Inherit fonts for inputs and buttons + reset styles */
 a,
@@ -31,7 +31,6 @@ button,
 textarea,
 select {
   border: none;
-  font: inherit;
   text-decoration: none;
   display: inline-block;
   padding: 0;

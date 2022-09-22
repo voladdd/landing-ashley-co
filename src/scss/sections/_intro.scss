@@ -1,0 +1,6 @@
+@use "../abstracts/colors" as *;
+
+section.intro {
+  background-color: $background-color-yellow;
+  color: $text-color-black;
+}

@@ -1,0 +1,6 @@
+@use "../abstracts/colors" as *;
+
+section.industry {
+  background-color: $background-color-red;
+  color: $text-color-gray;
+}

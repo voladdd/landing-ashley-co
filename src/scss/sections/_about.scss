@@ -1,0 +1,6 @@
+@use "../abstracts/colors" as *;
+
+section.about {
+  background-color: $background-color-white;
+  color: $text-color-black;
+}

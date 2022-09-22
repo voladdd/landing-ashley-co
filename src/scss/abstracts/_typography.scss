@@ -7,3 +7,35 @@ $font-type-main: "Roboto";
 body {
   font-family: "Roboto", sans-serif;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 400;
+}
+
+button,
+a {
+  text-transform: uppercase;
+}
+
+section {
+  a {
+    font-size: $font-size-small;
+    color: inherit;
+  }
+  h1 {
+    font-size: $font-size-huge;
+  }
+  h2 {
+    font-size: calc($font-size-medium * 0.9);
+  }
+  h3 {
+    font-size: calc($font-size-medium * 0.85);
+  }
+  p {
+    font-size: $font-size-medium;
+  }
+}

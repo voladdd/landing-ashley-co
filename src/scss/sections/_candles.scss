@@ -1,0 +1,6 @@
+@use "../abstracts/colors" as *;
+
+section.candles {
+  background-color: $background-color-brown;
+  color: $text-color-gray;
+}

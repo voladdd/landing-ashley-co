@@ -19,9 +19,10 @@ sass --watch src/scss:src/public
 
 ### HTML
 
-- [ ] Create html using semantic elements
+- [x] Create html using semantic elements
 - [ ] Name classes with BEM technology
-- [ ] Proper alt names
+- [ ] Layout
+- [x] Proper alt names
 
 ### CSS
 
