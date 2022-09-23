@@ -1,6 +1,7 @@
 @use "../abstracts/colors" as *;
+@use "../components/underlined-link" as *;
 
-section.perfume {
-  color: $text-color-gray;
-  background-color: $background-color-pink;
+section.refill {
+  @include underlined-link($text-color-black);
+  color: $text-color-black;
 }

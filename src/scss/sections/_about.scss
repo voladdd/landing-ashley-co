@@ -1,6 +1,8 @@
 @use "../abstracts/colors" as *;
+@use "../components/underlined-link" as *;
 
 section.about {
+  @include underlined-link($text-color-black);
   background-color: $background-color-white;
   color: $text-color-black;
 }

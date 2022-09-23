@@ -1,0 +1,26 @@
+@use "../abstracts/layouts" as *;
+
+header {
+  position: absolute;
+  width: 100%;
+  padding: $side-padding $side-padding 0 $side-padding;
+}
+
+header nav {
+  a {
+    color: black;
+  }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  img {
+    max-width: 6.25em;
+  }
+  ul {
+    li:first-child {
+      margin-right: 2.5em;
+    }
+    display: inherit;
+    align-items: center;
+  }
+}

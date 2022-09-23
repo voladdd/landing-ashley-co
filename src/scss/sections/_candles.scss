@@ -1,6 +1,12 @@
 @use "../abstracts/colors" as *;
+@use "../abstracts/layouts" as *;
+@use "../components/underlined-link" as *;
+
+@include template-layout-1__text();
 
 section.candles {
+  @include underlined-link($text-color-gray);
   background-color: $background-color-brown;
   color: $text-color-gray;
+  @include template-layout-1();
 }

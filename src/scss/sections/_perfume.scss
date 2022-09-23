@@ -1,5 +1,12 @@
 @use "../abstracts/colors" as *;
+@use "../abstracts/layouts" as *;
+@use "../components/underlined-link" as *;
 
-section.refill {
-  color: $text-color-black;
+@include template-layout-1__text();
+
+section.perfume {
+  @include underlined-link($text-color-gray);
+  color: $text-color-gray;
+  background-color: $background-color-pink;
+  @include template-layout-1();
 }

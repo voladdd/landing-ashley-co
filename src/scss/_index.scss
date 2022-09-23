@@ -4,7 +4,9 @@
 @forward "./abstracts/reset";
 @forward "./abstracts/typography";
 
+@forward "./components/header";
 @forward "./components/burger-menu";
+@forward "./components/underlined-link";
 
 @forward "./sections/intro";
 @forward "./sections/candles";

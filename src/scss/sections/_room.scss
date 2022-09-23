@@ -1,5 +1,7 @@
 @use "../abstracts/colors" as *;
+@use "../components/underlined-link" as *;
 
-section.perfume {
+section.room {
+  @include underlined-link($text-color-black);
   color: $text-color-black;
 }
