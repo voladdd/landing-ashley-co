@@ -1,7 +1,24 @@
 @use "../abstracts/colors" as *;
+@use "../abstracts/layouts" as *;
 @use "../components/underlined-link" as *;
 
 section.refill {
   @include underlined-link($text-color-black);
   color: $text-color-black;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: minmax(10px, 100vh);
+  .side {
+    position: relative;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    a {
+      left: $side-padding;
+      bottom: $side-padding;
+      position: absolute;
+    }
+  }
 }

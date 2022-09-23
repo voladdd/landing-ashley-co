@@ -1,0 +1,20 @@
+@use "../abstracts/colors" as *;
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $background-color-white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $background-color-gray;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:active {
+  background: $background-color-black;
+}

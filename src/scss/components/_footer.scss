@@ -1,0 +1,45 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/layouts" as *;
+
+footer {
+  background-color: $background-color-gray;
+  color: $text-color-gray--lighter;
+  form {
+    padding: $side-padding;
+    width: 50%;
+  }
+  fieldset {
+    display: grid;
+    column-gap: 1rem;
+    row-gap: 0.75rem;
+    grid-template-areas:
+      "legend       .               ."
+      "input-name   input-email     ."
+      "label-name   label-email     button";
+    input {
+      background-color: transparent;
+      color: inherit;
+      border-bottom: 1px solid $text-color-gray;
+    }
+    legend {
+      grid-area: legend;
+    }
+    label[for="name"] {
+      grid-area: label-name;
+    }
+    #name {
+      grid-area: input-name;
+    }
+    label[for="email"] {
+      grid-area: label-email;
+    }
+    #email {
+      grid-area: input-email;
+    }
+    button {
+      grid-area: button;
+      background-color: transparent;
+      color: inherit;
+    }
+  }
+}

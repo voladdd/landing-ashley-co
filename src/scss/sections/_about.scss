@@ -5,4 +5,17 @@ section.about {
   @include underlined-link($text-color-black);
   background-color: $background-color-white;
   color: $text-color-black;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 60% 40%;
+  align-items: center;
+  justify-items: center;
+  img {
+    max-width: 95%;
+  }
+  .about__text {
+    * {
+      margin-bottom: 0.75em;
+    }
+  }
 }

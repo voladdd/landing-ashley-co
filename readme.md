@@ -20,14 +20,14 @@ sass --watch src/scss:src/public
 ### HTML
 
 - [x] Create html using semantic elements
-- [ ] Name classes with BEM technology
-- [ ] Layout
+- [x] Name classes with BEM technology
+- [x] Layout
 - [x] Proper alt names
 
 ### CSS
 
 - [ ] Responsive design for mobile, tablet, pc
-- [ ] Custom scrollbar
+- [x] Custom scrollbar
 
 ### JS
 

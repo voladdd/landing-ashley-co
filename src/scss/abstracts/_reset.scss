@@ -31,9 +31,15 @@ a:visited,
 input,
 button,
 textarea,
+fieldset,
 select {
   border: none;
   text-decoration: none;
   display: inline-block;
   padding: 0;
+}
+
+input:focus,
+button:focus {
+  outline: none;
 }
