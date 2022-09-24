@@ -2,7 +2,11 @@
 
 #### Launch SASS to watch folder:
 
-sass --watch src/scss:src/public
+`sass --watch src/scss:src/public`
+
+### Launch local server
+
+`npx serve`
 
 #### Design: [FIGMA](https://www.figma.com/file/b4FE5jKE4SVKBSNvjpNd6j/spizjuAlcohol?node-id=0%3A1)
 
@@ -32,6 +36,5 @@ sass --watch src/scss:src/public
 ### JS
 
 - [x] Smooth scrool between sections
-- [ ] Fade animations on scroll
-- [ ] Custom image container behavior on scroll
-- [ ] Closable popup message
+- [x] Fade animations on scroll
+- [x] Closable popup message

@@ -3,6 +3,7 @@
   height: 100vh;
   scroll-snap-type: y proximity;
   overflow-y: scroll;
+  position: relative;
 }
 
 html {
@@ -15,8 +16,8 @@ body::-webkit-scrollbar {
 }
 
 section {
-  scroll-snap-align: start;
-  scroll-snap-stop: normal;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
 }
 
 /* Box sizing rules */
@@ -50,6 +51,7 @@ select {
   text-decoration: none;
   display: inline-block;
   padding: 0;
+  color: inherit;
 }
 
 input:focus,
@@ -89,6 +91,15 @@ section h3 {
 }
 section p {
   font-size: 0.9375rem;
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.show {
+  opacity: 1;
 }
 
 header {
@@ -218,6 +229,49 @@ footer fieldset button {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:active {
   background: #1b1b1b;
+}
+
+.popup {
+  background-color: #1b1b1b;
+  color: #f1f1ee;
+  position: fixed;
+  width: 23.5em;
+  height: 15em;
+  padding: 1.625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  bottom: 1.625rem;
+  right: 1.625rem;
+  z-index: 1;
+  cursor: pointer;
+}
+.popup .underlined-link {
+  position: relative;
+}
+.popup .underlined-link::after {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #f1f1ee;
+  content: "";
+  left: 0;
+  bottom: -5px;
+}
+.popup .underlined-link:hover::after {
+  cursor: pointer;
+}
+
+.popup::before {
+  content: "x";
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+}
+
+.popup:hover {
+  background-color: #504b4d;
 }
 
 section.intro {

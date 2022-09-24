@@ -1,0 +1,32 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/layouts" as *;
+@use "./underlined-link" as *;
+
+.popup {
+  background-color: $background-color-black;
+  color: $text-color-white;
+  position: fixed;
+  width: 23.5em;
+  height: 15em;
+  padding: $side-padding;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  bottom: $side-padding;
+  right: $side-padding;
+  z-index: 1;
+  cursor: pointer;
+  @include underlined-link($text-color-white);
+}
+
+.popup::before {
+  content: "x";
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+}
+
+.popup:hover {
+  background-color: $background-color-gray;
+}

@@ -5,6 +5,7 @@ $tablet: 768px;
   height: 100vh;
   scroll-snap-type: y proximity;
   overflow-y: scroll;
+  position: relative;
 }
 
 html {
@@ -17,8 +18,8 @@ body::-webkit-scrollbar {
 }
 
 section {
-  scroll-snap-align: start;
-  scroll-snap-stop: normal;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
 }
 
 @mixin template-layout-1() {

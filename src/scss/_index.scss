@@ -3,12 +3,14 @@
 @forward "./abstracts/layouts";
 @forward "./abstracts/reset";
 @forward "./abstracts/typography";
+@forward "./abstracts/text-animation";
 
 @forward "./components/header";
 @forward "./components/burger-menu";
 @forward "./components/underlined-link";
 @forward "./components/footer";
 @forward "./components/scrollbar";
+@forward "./components/popup";
 
 @forward "./sections/intro";
 @forward "./sections/candles";
