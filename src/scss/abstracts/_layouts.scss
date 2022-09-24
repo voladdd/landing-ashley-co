@@ -1,4 +1,5 @@
 $side-padding: 1.625rem;
+$tablet: 768px;
 
 @mixin template-layout-1() {
   display: grid;
@@ -23,6 +24,29 @@ $side-padding: 1.625rem;
     grid-column: 1 / 2;
     padding: $side-padding;
   }
+  @media screen and (max-width: $tablet) {
+    grid-template-columns: 1fr;
+    align-items: center;
+    h1 {
+      grid-row: 2 / 3;
+      grid-column: 1 / 2;
+      padding: $side-padding 0 0 $side-padding;
+      text-align: start;
+      align-self: end;
+    }
+    img {
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+      height: 100%;
+      object-fit: cover;
+      justify-self: end;
+    }
+    h2 {
+      grid-row: 3 / 4;
+      grid-column: 1 / 2;
+      padding: 0 $side-padding;
+    }
+  }
 }
 
 @mixin template-layout-1__text {
@@ -33,6 +57,18 @@ $side-padding: 1.625rem;
       padding: $side-padding;
       a {
         margin-top: 1.625em;
+      }
+    }
+  }
+  @media screen and (max-width: $tablet) {
+    section {
+      .text {
+        grid-row: 4 / 5;
+        grid-column: 1 / 2;
+        padding: 0 $side-padding;
+        a {
+          margin-top: 1.625em;
+        }
       }
     }
   }

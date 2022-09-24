@@ -43,3 +43,22 @@ footer {
     }
   }
 }
+
+@media screen and (max-width: $tablet) {
+  footer {
+    form {
+      padding: $side-padding;
+      width: 100%;
+    }
+    fieldset {
+      row-gap: 1rem;
+      grid-template-areas:
+        "legend"
+        "input-name"
+        "label-name"
+        "input-email"
+        "label-email"
+        "button";
+    }
+  }
+}
