@@ -26,12 +26,12 @@ sass --watch src/scss:src/public
 
 ### CSS
 
-- [ ] Responsive design for mobile, tablet, pc
+- [x] Responsive design for mobile, tablet, pc
 - [x] Custom scrollbar
 
 ### JS
 
-- [ ] Smooth scrool between sections
+- [x] Smooth scrool between sections
 - [ ] Fade animations on scroll
 - [ ] Custom image container behavior on scroll
 - [ ] Closable popup message
